@@ -3,4 +3,4 @@ Meu currículo online
 
 ## Info
 
-Currículo Web como portfólio para meu GitHub
+:paperclip: Currículo Web como portfólio para meu GitHub
