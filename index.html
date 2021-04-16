@@ -1,288 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="Atos Rocha" />
-    <title>Curriculo Atos Rocha</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.4.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.4.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.4.1/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-</head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">Atos Rocha</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/perfil.jpeg" alt="" /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre mim</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiência</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educação</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interesses</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificados</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">
-                    Atos
-                    <span class="text-primary">Rocha</span>
-                </h1>
-                <div class="subheading mb-5">
-                    Amador Bueno da Veiga, Penha de França-SP · (11) 95871-1783 ·
-                    <a href="mailto:atos.tv@gmail.com">atos.tv@gmail.com</a>
-                </div>
-                <p class="lead mb-5">Extremamente motivado, em constante
-                    desenvolvimento de minhas habilidades e
-                    crescimento profissional.
-                    Possuo análise crítica e boa comunicação</p>
-                <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/atos-rocha-02619419b/"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/Dev-Atos"><i class="fab fa-github"></i></a>
-                    <a class="social-icon" href="https://www.instagram.com/sr.atos/?hl=pt-br"><i
-                            class="fab fa-instagram"></i></a>
-                    <a class="social-icon" href="https://www.facebook.com/Atos.rochaa"><i
-                            class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5" data-aos="fade-right">Experiências</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Analista de Suporte N1- Jovem aprendiz</h3>
-                        <div class="subheading mb-3">Igreja Universal do Reino de Deus</div>
-                        <p>Documentar incidentes e escalar tickets em software de Service desk e Help desk.
-                            <br>Resolução de problemas em primeiro nível.
-                            <br>Perfil de administrador no Office 365.
-                            <br>Manuseio e suporte no Windows 10.
-                            <br>Controles de acesso de clientes/usuários.
-                        </p>
-
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">FEV-2020 - JAN-2021</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Analista de suporte N2- Jovem aprendiz
-                        </h3>
-                        <div class="subheading mb-3">Igreja Universal do Reino de Deus</div>
-                        <p>Remanejamento de máquinas.
-                            <br>Inserção de máquinas no domínio.
-                            <br>Resolução de problemas relacionados as configurações das máquinas.
-                            <br>Formatação e instalação do Windows e instalação de programas específicos da empresa.
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">FEV-2020 - JAN-2021</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Analista DCSH- Jovem aprendiz
-                        </h3>
-                        <div class="subheading mb-3">Igreja Universal do Reino de Deus</div>
-                        <p>Cadastro de máquinas no domínio da empresa.
-                            <br>Contagem de hardwares e softwares do almoxarifado TI.
-                            <br>Perfil de administrador na ferramenta ITManager para controle de máquinas e usuários.
-                        </p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">JAN-2020 - ABRIL-2021</span></div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5" data-aos="fade-right">Educação</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Universidade Cruzeiro do Sul</h3>
-                        <div class="subheading mb-3">Estudante de ciência da computação</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Agosto 2019 - Agosto 2023</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Inglês- Via certa cursos</h3>
-                        <div class="subheading mb-3">Língua Inglesa</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Janeiro 2018 - Outubro 2018 </span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">E.E Esmeralda Milano Maroni</h3>
-                        <div class="subheading mb-3">Ensino médio completo</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Janeiro 2015 - Dezembro 2015 </span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between" data-aos="fade-left">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">C.E.C.R.A Ademir de Almeida Lemos</h3>
-                        <div class="subheading mb-3">Informática Básica</div>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">Janeiro 2014 - Janeiro 2015 </span></div>
-                </div>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5" data-aos="fade-right">Habilidades</h2>
-                <div class="subheading mb-3" data-aos="fade-left">Programação, Linguagens & Ferramentas</div>
-
-                <div data-aos="fade-left">
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-windows"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                    </ul>
-                </div>
-
-                <div data-aos="fade-left">
-                    <div class="subheading mb-3" data-aos="fade-left">Conhecimentos</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            HTML & CSS- Avançado
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Bootstrap & JavaScript- Intermediário
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            NodeJS- Iniciante
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Git e Github- Avançado
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Windows 7, Windows 8 & Windows 10- Avançado
-                        </li>
-
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Linguagem de programação Java- Intermediário
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content " data-aos="fade-left">
-                <h2 class="mb-5" data-aos="fade-right">Interesses</h2>
-                <p>Atualmente tenho interesse na área de suporte mas todos os dias venho me esforçanco ao máximo para
-                    ganhar cada vez mais conhecimento e começar a trabalhar na área de desenvolvimento, pode ser tanto
-                    desenvolvimento web, softwares ou mobile, apesar de citar os três, tenho mais prática com
-                    desenvolvimento web.
-                    Quando começo a desenvolver eu me apaixono cada vez mais e mais, passo horas e horas programando e
-                    escrevendo linhas de códigos, quando faço isso esqueço o mundo lá fora, parece que todos os
-                    problemas desaparecem, exceto os problemas de bugs e erros nos códigos.
-
-                    <br><br>"Creio que a partir dos estudos, construímos um futuro melhor, vamos em busca dos nossos
-                    ideais de um mundo novo."
-                    <br>Atos Rocha
-
-                    <br><br> "A educação exige os maiores cuidados, porque influi sobre toda a vida."
-                    <br>Sêneca
-                </p>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5" data-aos="fade-right">Certificados e Voluntariados</h2>
-
-                <div data-aos="fade-left">
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li">
-                                <i class="fas fa-trophy text-warning"></i></span>
-                            Web Developer Egypt-AIESEC (voluntário)(a concluir)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Serviços de comércio de bens e turismo- SENAC
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Auxliar administrativo- SENAI
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Eletricista Automotivo- SENAI
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Inglês- Via certa cursos
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Tiro de Guerra- TG-02/008 (voluntário)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Informática- CECRA Ademir de Almeida Lemos
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
